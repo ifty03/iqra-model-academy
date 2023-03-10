@@ -10,6 +10,14 @@ body {
     background-image: url("./Assets/image/hero_bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-    
+    background-position: center; 
   }
+.background-image-allTeachers {
+    background-image: url("./Assets/image/pattern1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+  }
+  .img-bottom{
+    clip-path: polygon(0 0, 100% 0, 94% 100%, 6% 100%);
+}
