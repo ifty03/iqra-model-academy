@@ -1,0 +1,21 @@
+
+body {
+  position: relative;
+ 
+}
+
+.swiper {
+  width: 100%; 
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  border-radius: 15px;
+  
+}

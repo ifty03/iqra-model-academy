@@ -4,6 +4,7 @@ import FAQ from "../../Components/FAQ/FAQ";
 import Hero from "../../Components/Hero/Hero";
 import OurAim from "../../Components/OurAim/OurAim";
 import Overview from "../../Components/Overview/Overview";
+import SlideImage from "../../Components/SlideImage/SlideImage";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <OurAim />
       <AllTeachers />
       <FAQ />
+      <SlideImage />
     </div>
   );
 };
