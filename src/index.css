@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+    font-family: 'SolaimanLipi', Arial, sans-serif !important;
+}
+
+.background-image-hero {
+    background-image: url("./Assets/image/hero_bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+  }

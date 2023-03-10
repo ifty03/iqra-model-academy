@@ -21,9 +21,9 @@ module.exports = {
     },
     colors: {
       // our website primary color
-      primary: "#162D56",
+      primary: "#132B4E",
       // our website secondary color
-      secondary: "#C49C6C",
+      secondary: "#C59A69",
       // our website dark color
       dark: "#060608",
       // default white color
