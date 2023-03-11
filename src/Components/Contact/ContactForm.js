@@ -12,7 +12,7 @@ const ContactForm = () => {
   };
   return (
     <div>
-      <div className="w-fit mx-auto">
+      <div className="w-fit mx-auto mt-10 md:mt-0">
         <h1 className="text-2xl font-semibold mb-2 text-lightGray">
           আমাদের সথে যোগাযোগ করুন
         </h1>
