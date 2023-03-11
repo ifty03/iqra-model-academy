@@ -9,7 +9,7 @@ import SlideImage from "../../Components/SlideImage/SlideImage";
 
 const Home = () => {
   return (
-    <div>
+    <div className="mt-10">
       <Hero />
       <Overview />
       <OurAim />
