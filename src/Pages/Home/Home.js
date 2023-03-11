@@ -1,5 +1,6 @@
 import React from "react";
 import AllTeachers from "../../Components/AllTeachers/AllTeachers";
+import Contact from "../../Components/Contact/Contact";
 import FAQ from "../../Components/FAQ/FAQ";
 import Hero from "../../Components/Hero/Hero";
 import OurAim from "../../Components/OurAim/OurAim";
@@ -15,6 +16,7 @@ const Home = () => {
       <AllTeachers />
       <FAQ />
       <SlideImage />
+      <Contact />
     </div>
   );
 };
