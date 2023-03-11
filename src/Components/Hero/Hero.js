@@ -23,9 +23,15 @@ const Hero = () => {
       <h2 className="lg:text-[3.7rem] md:text-[3rem] text-2xl font-semibold text-center text-dark lg:mt-16 md:mt-10 md:mb-7 lg:mb-10">
         আপনাকে স্বাগতম
       </h2>
-      <button className="w-fit py-3 px-5 bg-primary rounded-md my-3 text-white text-sm mx-auto block hover:scale-110 duration-300">
+
+      <a
+        className="w-fit py-3 px-5 bg-primary rounded-md my-3 text-white text-sm mx-auto block hover:scale-110 duration-300"
+        target={"_blank"}
+        href="https://drive.google.com/file/d/1OK7HZxbK62qcsmg89FSge1Mk9d97zCHA/view"
+      >
         ইক্বরা মডেল একাডেমী সম্পর্কে জানুন
-      </button>
+      </a>
+
       <button className="w-fit py-3 px-5 bg-[#FF0000] rounded-md my-3 text-white text-sm mx-auto hover:scale-110 duration-300 flex gap-2">
         <Icon className="text-lg" icon="mdi:bell-notification" /> নোটিশ
       </button>
