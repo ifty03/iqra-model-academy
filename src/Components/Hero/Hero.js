@@ -1,6 +1,6 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import logo from "../../Assets/image/logo.png";
+import logo from "../../Assets/image/iqra.png";
 
 const Hero = () => {
   return (
@@ -13,7 +13,7 @@ const Hero = () => {
         <div className="h-2 bg-secondary lg:w-[40%] md:w-[35%] w-[14%]"></div>
       </div>
       <img
-        className="w-[30%] mx-auto my-5"
+        className="w-[20%] mx-auto my-5"
         src={logo}
         alt="this is iqra model logo"
       />
@@ -25,14 +25,14 @@ const Hero = () => {
       </h2>
 
       <a
-        className="w-fit py-3 px-5 bg-primary rounded-md my-3 text-white text-sm mx-auto block hover:scale-110 duration-300"
+        className="w-fit lg:py-4 py-3 lg:px-10 px-6 bg-primary rounded-md my-3 text-white  mx-auto block hover:scale-110 duration-300"
         target={"_blank"}
         href="https://drive.google.com/file/d/1OK7HZxbK62qcsmg89FSge1Mk9d97zCHA/view"
       >
         ইক্বরা মডেল একাডেমী সম্পর্কে জানুন
       </a>
 
-      <button className="w-fit py-3 px-5 bg-[#FF0000] rounded-md my-3 text-white text-sm mx-auto hover:scale-110 duration-300 flex gap-2">
+      <button className="w-fit lg:py-4 py-3 lg:px-10 px-6 bg-[#FF0000] rounded-md my-3 text-white  mx-auto hover:scale-110 duration-300 flex gap-2">
         <Icon className="text-lg" icon="mdi:bell-notification" /> নোটিশ
       </button>
     </div>

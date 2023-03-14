@@ -1,12 +1,12 @@
 import { Icon } from "@iconify/react";
 import React from "react";
-import logo from "../../Assets/image/logo.png";
+import logo from "../../Assets/image/iqra.png";
 
 const Footer = () => {
   return (
     <div className="h-[270px] w-full bg-dark">
       <div className="max-w-sm mx-auto my-auto pt-16">
-        <img className="w-32 mx-auto mb-5" src={logo} alt="" />
+        <img className="w-24 mx-auto mb-5" src={logo} alt="" />
         <div className="flex justify-center gap-3 items-center text-white text-2xl">
           <Icon
             className="hover:text-secondary cursor-pointer"
