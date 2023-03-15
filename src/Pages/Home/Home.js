@@ -13,7 +13,7 @@ const Home = () => {
       <Hero />
       <Overview />
       <OurAim />
-      <AllTeachers />
+      {/* <AllTeachers /> */}
       <FAQ />
       <SlideImage />
       <Contact />

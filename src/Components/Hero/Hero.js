@@ -4,7 +4,7 @@ import logo from "../../Assets/image/iqra.png";
 
 const Hero = () => {
   return (
-    <div className="background-image-hero border-b-8 border-[#F7DC79] md:pb-40 pb-10">
+    <div className="background-image-hero border-b-4 border-[#F7DC79] md:pb-40 pb-10">
       <div className="flex justify-center items-center w-full md:gap-5 gap-3 mx-auto py-2">
         <div className="h-2 bg-secondary lg:w-[40%] md:w-[35%] w-[14%]"></div>
         <p className="text-dark w-fit font-semibold text-sm">

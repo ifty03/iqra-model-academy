@@ -3,8 +3,8 @@ import React from "react";
 
 const TopBar = () => {
   return (
-    <div className="lg:px-24 md:px-10 px-5 py-3 bg-primary text-white flex justify-between items-center  fixed top-0 left-0 right-0 backdrop-blur-sm z-50">
-      <div className="flex items-center gap-5 text-sm">
+    <div className="lg:px-24 md:px-10 px-5 py-2.5 bg-primary text-white flex justify-between items-center  fixed top-0 left-0 right-0 backdrop-blur-sm z-50">
+      <div className="flex items-center gap-5 text-[12px]">
         <div className="flex items-center gap-2">
           <Icon className="text-lg" icon="material-symbols:add-call" />
           <p>+880 1993 655 082</p>

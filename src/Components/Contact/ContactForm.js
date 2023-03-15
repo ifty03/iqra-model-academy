@@ -16,32 +16,32 @@ const ContactForm = () => {
         <h1 className="text-2xl font-semibold mb-2 text-lightGray">
           আমাদের সথে যোগাযোগ করুন
         </h1>
-        <div className="w-[30%] h-[5px] bg-secondary"></div>
+        <div className="w-[100%] h-[5px] bg-secondary"></div>
       </div>
       <form onSubmit={handelSubmit} className="mt-10 max-w-md mx-auto">
         <input
-          className="w-full block p-3 outline-none bg-extraLightGray rounded-xl mb-6"
+          className="w-full block py-3 px-5 outline-none bg-extraLightGray rounded-[20px] mb-6"
           placeholder="Your Name"
           name="name"
           type="text"
           required
         />
         <input
-          className="w-full block p-3 outline-none bg-extraLightGray rounded-xl mb-6"
+          className="w-full block py-3 px-5 outline-none bg-extraLightGray rounded-[20px] mb-6"
           placeholder="Your email"
           name="email"
           type="email"
           required
         />
         <input
-          className="w-full block p-3 outline-none bg-extraLightGray rounded-xl mb-6"
+          className="w-full block py-3 px-5 outline-none bg-extraLightGray rounded-[20px] mb-6"
           placeholder="Type your number"
           name="number"
           type="number"
           required
         />
         <textarea
-          className="w-full block p-3 outline-none bg-extraLightGray rounded-xl mb-6"
+          className="w-full block py-3 px-5 outline-none bg-extraLightGray rounded-[20px] mb-6"
           placeholder="Type your message"
           name="message"
           rows={5}
@@ -50,7 +50,7 @@ const ContactForm = () => {
           required
         />
         <input
-          className="cursor-pointer py-3 w-full bg-secondary rounded-xl font-semibold text-white border border-secondary hover:text-secondary hover:bg-white transition-colors duration-300"
+          className="cursor-pointer py-3 w-full bg-secondary rounded-[20px] font-semibold text-white border border-secondary hover:text-secondary hover:bg-white transition-colors duration-300"
           type="submit"
           value="বার্তা পাঠান"
         />
