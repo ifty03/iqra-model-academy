@@ -33,7 +33,7 @@ const OverviewModal = ({ showModal, setShowModal }) => {
                       type="button"
                       onClick={() => setShowModal(false)}
                     >
-                      Close
+                      Close!
                     </button>
                     <button
                       className="bg-primary text-white  font-bold uppercase text-xs px-6 py-3 rounded-md mr-1 mb-1 ease-linear transition-all duration-150"
