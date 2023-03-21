@@ -4,6 +4,7 @@ import modalImg from "../../Assets/image/overview/Heff Rutin.webp";
 const OverviewModal = ({ showModal, setShowModal }) => {
   return (
     <>
+      {/* overview details modal */}
       {showModal ? (
         <div className="fixed top-0 left-0 right-0 bottom-0 backdrop-blur z-50">
           <>
@@ -33,7 +34,7 @@ const OverviewModal = ({ showModal, setShowModal }) => {
                       type="button"
                       onClick={() => setShowModal(false)}
                     >
-                      Close!
+                      Close
                     </button>
                     <button
                       className="bg-primary text-white  font-bold uppercase text-xs px-6 py-3 rounded-md mr-1 mb-1 ease-linear transition-all duration-150"
