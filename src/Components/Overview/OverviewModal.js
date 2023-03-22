@@ -1,56 +1,77 @@
 import React from "react";
-import modalImg from "../../Assets/image/overview/Heff Rutin.webp";
+import { Dialog, Transition } from "@headlessui/react";
+import { Fragment } from "react";
+import { Icon } from "@iconify/react";
 
-const OverviewModal = ({ showModal, setShowModal }) => {
+const OverviewModal = ({ closeModal, isOpen, modalImg }) => {
   return (
-    <>
-      {/* overview details modal */}
-      {showModal ? (
-        <div className="fixed top-0 left-0 right-0 bottom-0 backdrop-blur z-50">
-          <>
-            <div className="justify-center items-center flex overflow-x-hidden overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none">
-              <div className="relative w-auto my-6 mx-auto max-w-2xl pt-[80vh]">
-                {/*content*/}
-                <div className="border-0 rounded-lg shadow-lg relative flex flex-col w-full bg-white outline-none focus:outline-none">
-                  {/*header*/}
-                  <div className="flex  justify-end p-5 border-b border-solid border-lightGray/30 rounded-t">
+    <Transition appear show={isOpen} as={Fragment}>
+      <Dialog as="div" className="relative z-10" onClose={closeModal}>
+        <Transition.Child
+          as={Fragment}
+          enter="ease-out duration-300"
+          enterFrom="opacity-0"
+          enterTo="opacity-100"
+          leave="ease-in duration-200"
+          leaveFrom="opacity-100"
+          leaveTo="opacity-0"
+        >
+          <div className="fixed inset-0 bg-black bg-opacity-25" />
+        </Transition.Child>
+
+        <div className="fixed inset-0 overflow-y-auto">
+          <div className="flex min-h-full items-center justify-center p-4 text-center">
+            <Transition.Child
+              as={Fragment}
+              enter="ease-out duration-300"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="ease-in duration-200"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <div className="w-full backdrop-blur py-20">
+                <Dialog.Panel className="w-full max-w-3xl mx-auto transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <Icon
+                    onClick={closeModal}
+                    className="text-4xl text-[#FF0000]/70 hover:text-[#FF0000]/80 cursor-pointer ml-auto"
+                    icon="gridicons:cross-circle"
+                  />
+
+                  {modalImg ? (
+                    <img
+                      className="w-full"
+                      src={modalImg}
+                      alt="this is modal img"
+                    />
+                  ) : (
+                    "no image here"
+                  )}
+
+                  <div className="mt-4 flex w-full justify-end gap-5">
                     <button
-                      className="px-2  ml-auto bg-[#FF0000] rounded-full border-0 text-black float-right text-3xl leading-none font-semibold outline-none focus:outline-none"
-                      onClick={() => setShowModal(false)}
-                    >
-                      <span className=" text-white text-2xl outline-none focus:outline-none -mt-1">
-                        ×
-                      </span>
-                    </button>
-                  </div>
-                  {/*body*/}
-                  <div className="relative p-6 flex-auto">
-                    <img className="w-full h-full" src={modalImg} alt="" />
-                  </div>
-                  {/*footer*/}
-                  <div className="flex items-center justify-end p-6 border-t border-solid border-lightGray/30 rounded-b">
-                    <button
-                      className="text-white bg-[#FF0000] font-bold uppercase px-6 py-3 text-xs rounded-md outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
                       type="button"
-                      onClick={() => setShowModal(false)}
+                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      onClick={closeModal}
                     >
-                      Close
+                      Got it, thanks!
                     </button>
-                    <button
-                      className="bg-primary text-white  font-bold uppercase text-xs px-6 py-3 rounded-md mr-1 mb-1 ease-linear transition-all duration-150"
-                      type="button"
-                    >
-                      Download
-                    </button>
+                    <a href={modalImg} download>
+                      <button
+                        type="button"
+                        className="bg-primary rounded-md py-2 px-5 text-white hover:bg-primary/80"
+                      >
+                        Download
+                      </button>
+                    </a>
                   </div>
-                </div>
+                </Dialog.Panel>
               </div>
-            </div>
-            <div className="opacity-25 fixed inset-0 z-40 bg-black"></div>
-          </>
+            </Transition.Child>
+          </div>
         </div>
-      ) : null}
-    </>
+      </Dialog>
+    </Transition>
   );
 };
 
