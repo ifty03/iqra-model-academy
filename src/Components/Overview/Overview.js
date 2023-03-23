@@ -2,7 +2,7 @@ import { Icon } from "@iconify/react";
 import React, { useState } from "react";
 import OverviewModal from "./OverviewModal";
 import hifz from "../../Assets/image/overview/Heff Rutin (1).jpg";
-import najera from "../../Assets/image/overview/Heff Rutin (1).jpg";
+import najera from "../../Assets/image/overview/ampara.jpg";
 import ampara from "../../Assets/image/overview/ampara.jpg";
 import sishu from "../../Assets/image/overview/shishu class.jpg";
 import khabar from "../../Assets/image/overview/khabar ruitn.jpg";
@@ -23,8 +23,8 @@ const Overview = () => {
     <>
       <div className="grid lg:grid-cols-6 md:grid-cols-3 sm:grid-cols-2 grid-cols-1 w-11/12 mx-auto md:-mt-24">
         <div
-          onClick={async () => {
-            await setModalImg(hifz);
+          onClick={() => {
+            setModalImg(hifz);
             openModal();
           }}
           className=" py-10 group text-secondary bg-[#f7f5ed] border-x border-[#F7DC79] hover:bg-primary transition-colors duration-500 cursor-pointer"
@@ -37,7 +37,13 @@ const Overview = () => {
             হিফজ রুটিন
           </p>
         </div>
-        <div className=" py-10 group text-secondary bg-[#f7f5ed] border-x border-[#F7DC79] hover:bg-primary transition-colors duration-500 cursor-pointer">
+        <div
+          onClick={() => {
+            setModalImg(ampara);
+            openModal();
+          }}
+          className=" py-10 group text-secondary bg-[#f7f5ed] border-x border-[#F7DC79] hover:bg-primary transition-colors duration-500 cursor-pointer"
+        >
           <Icon
             className="text-5xl mb-7 text-center w-fit mx-auto group-hover:text-white"
             icon="material-symbols:menu-book-rounded"

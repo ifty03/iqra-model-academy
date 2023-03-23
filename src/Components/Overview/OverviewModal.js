@@ -20,7 +20,7 @@ const OverviewModal = ({ closeModal, isOpen, modalImg }) => {
         </Transition.Child>
 
         <div className="fixed inset-0 overflow-y-auto">
-          <div className="flex min-h-full items-center justify-center p-4 text-center">
+          <div className="flex min-h-full items-center justify-center text-center">
             <Transition.Child
               as={Fragment}
               enter="ease-out duration-300"
@@ -51,7 +51,7 @@ const OverviewModal = ({ closeModal, isOpen, modalImg }) => {
                   <div className="mt-4 flex w-full justify-end gap-5">
                     <button
                       type="button"
-                      className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+                      className="inline-flex justify-center rounded-md border border-primary/70 bg-primary/5 px-4 py-2 text-sm font-medium text-primary hover:bg-blue-200 outline-none"
                       onClick={closeModal}
                     >
                       Got it, thanks!
