@@ -47,7 +47,7 @@ const OverviewModal = ({ closeModal, isOpen, modalImg }) => {
                   ) : (
                     "no image here"
                   )}
-
+{/* action btn */}
                   <div className="mt-4 flex w-full justify-end gap-5">
                     <button
                       type="button"
