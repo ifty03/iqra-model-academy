@@ -47,14 +47,14 @@ const OverviewModal = ({ closeModal, isOpen, modalImg }) => {
                   ) : (
                     "no image here"
                   )}
-{/* action btn */}
+                  {/* action btn */}
                   <div className="mt-4 flex w-full justify-end gap-5">
                     <button
                       type="button"
                       className="inline-flex justify-center rounded-md border border-primary/70 bg-primary/5 px-4 py-2 text-sm font-medium text-primary hover:bg-blue-200 outline-none"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      Got it, thanks!!
                     </button>
                     <a href={modalImg} download>
                       <button
