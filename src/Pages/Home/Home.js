@@ -10,7 +10,7 @@ import Popups from "../../Components/Popups/Popups";
 
 const Home = () => {
   return (
-    <div className="mt-10">
+    <div className="">
       <Popups />
       <Hero />
       <Overview />
