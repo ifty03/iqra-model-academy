@@ -6,10 +6,12 @@ import Hero from "../../Components/Hero/Hero";
 import OurAim from "../../Components/OurAim/OurAim";
 import Overview from "../../Components/Overview/Overview";
 import SlideImage from "../../Components/SlideImage/SlideImage";
+import Popups from "../../Components/Popups/Popups";
 
 const Home = () => {
   return (
     <div className="mt-10">
+      <Popups />
       <Hero />
       <Overview />
       <OurAim />

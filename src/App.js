@@ -1,5 +1,6 @@
+import { Route, Routes } from "react-router-dom";
 import Footer from "./Components/Footer/Footer";
-import Popups from "./Components/Popups/Popups";
+import NotFound from "./Components/NotFound/NotFound";
 import TopBar from "./Components/TopBar/TopBar";
 import Home from "./Pages/Home/Home";
 
@@ -7,8 +8,11 @@ function App() {
   return (
     <div>
       <TopBar />
-      <Popups />
-      <Home />
+
+      <Routes>
+        <Route path="/" element={<Home></Home>}></Route>
+        <Route path="*" element={<NotFound></NotFound>}></Route>
+      </Routes>
       <Footer />
     </div>
   );
