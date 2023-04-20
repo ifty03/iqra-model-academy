@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 
 const NotFound = () => {
   return (
+    // not found page
     <div class="grid h-screen px-4 bg-white place-content-center">
       <div class="text-center">
         <svg
