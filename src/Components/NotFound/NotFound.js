@@ -26,7 +26,7 @@ const NotFound = () => {
         </svg>
 
         <h1 class="mt-6 text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-          Uh-oh! no
+          Uh-oh!
         </h1>
 
         <p class="mt-4 mb-5 text-gray-500">We can't find that page.</p>
